@@ -6,13 +6,13 @@ int main() {
     int n, m;
     double *v = NULL, *p = NULL, *q = NULL, **c = NULL, *lucro_por_produto = NULL;
 
-    // Processar entrada
+    //Processa entrada
     trata_entrada(stdin, &n, &m, &v, &p, &q, &c, &lucro_por_produto);
 
-    // Gerar saída
+    //Gera saída
     gerar_lp_solve(n, m, v, p, q, c, lucro_por_produto);
 
-    // Liberação de memória
+    //Libera memória alocada
     libera_memoria(v, p, q, c, lucro_por_produto, n);
 
     return 0;
