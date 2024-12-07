@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "lib_producao.h"
 
+//Forma de execução: "./producao < STDIN > STDOUT"
 int main() {
     int n, m;
     double *v = NULL, *p = NULL, *q = NULL, **c = NULL, *lucro_por_produto = NULL;

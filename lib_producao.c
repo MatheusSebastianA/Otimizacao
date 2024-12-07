@@ -105,6 +105,9 @@ void libera_memoria(double *v, double *p, double *q, double **c, double *lucro_p
     if (q != NULL) {
         free(q);
     }
+    if (lucro_por_produto != NULL){
+        free(lucro_por_produto);
+    }
     if (c != NULL) {
         for (int i = 0; i < n; i++) {
             if (c[i] != NULL) {
